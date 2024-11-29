@@ -98,6 +98,17 @@ definitions = [
         },  
     },
     {
+        id: "linethickness",
+        name: "line thickness",
+        type: "number",
+        default: 12,
+        options: {
+            min: 6,
+            max: 24,
+            step: 1,
+        },  
+    },
+    {
         id: "matwidth",
         name: "Mat size",
         type: "number",
@@ -130,7 +141,7 @@ if ($fx.getParam('aspectratio')== "296:420"){wide =705; high = 1000};
 
 
 var ratio = 1/scale;//use 1/4 for 32x40 - 1/3 for 24x30 - 1/2 for 16x20 - 1/1 for 8x10
-var minOffset = ~~(7*ratio); //this is aproximatly .125"
+var minOffset =  ~~($fx.getParam('linethickness')*ratio); //this is aproximatly .125"
 var framewidth = ~~($fx.getParam('matwidth')*ratio*scale); 
 var framradius = 0;
 
@@ -210,7 +221,7 @@ for (z = 0; z < stacks; z++) {
     drawFrame(z); // Draw the initial frame
         
    
-        //if(z==0){solid(z)} //Draw a solid background
+        if(z==0){solid(z)} //Draw a solid background
          
          //-----Draw each layer
         if(z<stacks-1 && z!=-1){
