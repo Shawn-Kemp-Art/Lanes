@@ -24,9 +24,168 @@ var tints = [
 {"Hex":"#C5D785", "Name":"Pistachio"},
 {"Hex":"#F7743E", "Name":"Tangerine"},
 {"Hex":"#1A1A1A", "Name":"Smooth Black"},
-{"Hex":"#FFFFFF", "Name":"Smooth White"},
+{"Hex":"#0000FF", "Name":"Smooth White"},
 {"Hex":"#949B6F", "Name":"Valley Green"},
 ]
+
+var AllColors = [
+    {"Hex":"#FEF6E3", "Name":"Antique White"},
+    {"Hex":"#A9D0DF", "Name":"Aqua Blue"},
+    {"Hex":"#F5E3CF", "Name":"Beige"},
+    {"Hex":"#01AE52", "Name":"Bright Green"},
+    {"Hex":"#8490A6", "Name":"Brittany Blue"},
+    {"Hex":"#745042", "Name":"Burnt Sienna"},
+    {"Hex":"#FFF35D", "Name":"Buttercup"},
+    {"Hex":"#AE0838", "Name":"Cardinal"},
+    {"Hex":"#447560", "Name":"Celtic"},
+    {"Hex":"#E1C76A", "Name":"Chamois"},
+    {"Hex":"#C4D817", "Name":"Chartreuse"},
+    {"Hex":"#8A473F", "Name":"Chili"},
+    {"Hex":"#CED5DB", "Name":"Clapboard"},
+    {"Hex":"#CC9047", "Name":"Golden"},
+    {"Hex":"#FBCBD7", "Name":"Hollyhock"},
+    {"Hex":"#EF4C84", "Name":"Hot Pink"},
+    {"Hex":"#70869D", "Name":"Lavender"},
+    {"Hex":"#4C739E", "Name":"Marine Blue"},
+    {"Hex":"#4C4638", "Name":"Mocha"},
+    {"Hex":"#63939D", "Name":"Ocean Blue"},
+    {"Hex":"#A999C8", "Name":"Pansy"},
+    {"Hex":"#C5D785", "Name":"Pistachio"},
+    {"Hex":"#F7743E", "Name":"Tangerine"},
+    {"Hex":"#1A1A1A", "Name":"Smooth Black"},
+    {"Hex":"#0000FF", "Name":"Smooth White"},
+    {"Hex":"#949B6F", "Name":"Valley Green"},
+    ]
+
+var SunsetGlow = [
+    {"Hex": "#F7743E", "Name": "Tangerine"},
+    {"Hex": "#CC9047", "Name": "Golden"},
+    {"Hex": "#745042", "Name": "Burnt Sienna"}
+  ];
+  
+  var OceanBreeze = [
+    {"Hex": "#A9D0DF", "Name": "Aqua Blue"},
+    {"Hex": "#4C739E", "Name": "Marine Blue"},
+    {"Hex": "#63939D", "Name": "Ocean Blue"}
+  ];
+  
+  var NaturalCalm = [
+    {"Hex": "#447560", "Name": "Celtic"},
+    {"Hex": "#C5D785", "Name": "Pistachio"},
+    {"Hex": "#949B6F", "Name": "Valley Green"}
+  ];
+  
+  var VintageChic = [
+    {"Hex": "#FEF6E3", "Name": "Antique White"},
+    {"Hex": "#E1C76A", "Name": "Chamois"},
+    {"Hex": "#F5E3CF", "Name": "Beige"}
+  ];
+  
+  var BoldVibrant = [
+    {"Hex": "#EF4C84", "Name": "Hot Pink"},
+    {"Hex": "#01AE52", "Name": "Bright Green"},
+    {"Hex": "#AE0838", "Name": "Cardinal"}
+  ];
+  
+  var WintersTwilight = [
+    {"Hex": "#8490A6", "Name": "Brittany Blue"},
+    {"Hex": "#70869D", "Name": "Lavender"},
+    {"Hex": "#CED5DB", "Name": "Clapboard"}
+  ];
+  
+  var WarmSpice = [
+    {"Hex": "#8A473F", "Name": "Chili"},
+    {"Hex": "#4C4638", "Name": "Mocha"},
+    {"Hex": "#FFF35D", "Name": "Buttercup"}
+  ];
+  
+  var SoftPetals = [
+    {"Hex": "#FBCBD7", "Name": "Hollyhock"},
+    {"Hex": "#A999C8", "Name": "Pansy"},
+    {"Hex": "#F5E3CF", "Name": "Beige"}
+  ];
+  
+  var FreshGreens = [
+    {"Hex": "#C4D817", "Name": "Chartreuse"},
+    {"Hex": "#C5D785", "Name": "Pistachio"},
+    {"Hex": "#01AE52", "Name": "Bright Green"}
+  ];
+  
+  var MonochromeElegance = [
+    {"Hex": "#1A1A1A", "Name": "Smooth Black"},
+    {"Hex": "#0000FF", "Name": "Smooth White"},
+    {"Hex": "#CED5DB", "Name": "Clapboard"}
+  ];
+
+  var TropicalSplash = [
+    {"Hex": "#01AE52", "Name": "Bright Green"},
+    {"Hex": "#C4D817", "Name": "Chartreuse"},
+    {"Hex": "#C5D785", "Name": "Pistachio"},
+    {"Hex": "#A9D0DF", "Name": "Aqua Blue"}
+  ];
+  
+  var AutumnWarmth = [
+    {"Hex": "#F7743E", "Name": "Tangerine"},
+    {"Hex": "#745042", "Name": "Burnt Sienna"},
+    {"Hex": "#AE0838", "Name": "Cardinal"},
+    {"Hex": "#447560", "Name": "Celtic"}
+  ];
+  
+  var ElegantMonochrome = [
+    {"Hex": "#CED5DB", "Name": "Clapboard"},
+    {"Hex": "#8490A6", "Name": "Brittany Blue"},
+    {"Hex": "#4C739E", "Name": "Marine Blue"},
+    {"Hex": "#70869D", "Name": "Lavender"}
+  ];
+  
+  var SunKissedEarth = [
+    {"Hex": "#FFF35D", "Name": "Buttercup"},
+    {"Hex": "#E1C76A", "Name": "Chamois"},
+    {"Hex": "#4C4638", "Name": "Mocha"},
+    {"Hex": "#8A473F", "Name": "Chili"}
+  ];
+  
+  var CitrusPunch = [
+    {"Hex": "#C4D817", "Name": "Chartreuse"},
+    {"Hex": "#F7743E", "Name": "Tangerine"},
+    {"Hex": "#EF4C84", "Name": "Hot Pink"},
+    {"Hex": "#FFF35D", "Name": "Buttercup"}
+  ];
+  
+  var FrostySky = [
+    {"Hex": "#70869D", "Name": "Lavender"},
+    {"Hex": "#8490A6", "Name": "Brittany Blue"},
+    {"Hex": "#63939D", "Name": "Ocean Blue"},
+    {"Hex": "#CED5DB", "Name": "Clapboard"}
+  ];
+  
+  var BoldNights = [
+    {"Hex": "#4C739E", "Name": "Marine Blue"},
+    {"Hex": "#AE0838", "Name": "Cardinal"},
+    {"Hex": "#1A1A1A", "Name": "Smooth Black"},
+    {"Hex": "#FFF35D", "Name": "Buttercup"}
+  ];
+  
+  var MutedElegance = [
+    {"Hex": "#F5E3CF", "Name": "Beige"},
+    {"Hex": "#A999C8", "Name": "Pansy"},
+    {"Hex": "#FBCBD7", "Name": "Hollyhock"},
+    {"Hex": "#8490A6", "Name": "Brittany Blue"}
+  ];
+  
+  var SunnyMeadows = [
+    {"Hex": "#CC9047", "Name": "Golden"},
+    {"Hex": "#C4D817", "Name": "Chartreuse"},
+    {"Hex": "#C5D785", "Name": "Pistachio"},
+    {"Hex": "#FFF35D", "Name": "Buttercup"}
+  ];
+  
+  var UrbanContrast = [
+    {"Hex": "#1A1A1A", "Name": "Smooth Black"},
+    {"Hex": "#0000FF", "Name": "Smooth White"},
+    {"Hex": "#F7743E", "Name": "Tangerine"},
+    {"Hex": "#A9D0DF", "Name": "Aqua Blue"}
+  ];
 
 var lightburn = [
 {"Hex":"#0000ff", "Name":"1"},
@@ -60,7 +219,47 @@ var lightburn = [
 {"Hex":"#ffdb66", "Name":"29"},
 ];
 
-var allColors = [
+var plottingColors = [
+  {"Hex":"#000001", "Name":"1"},
+  {"Hex":"#000002", "Name":"2"},
+  {"Hex":"#000003", "Name":"3"},
+  {"Hex":"#000004", "Name":"4"},
+  {"Hex":"#000005", "Name":"5"},
+  {"Hex":"#000006", "Name":"6"},
+  {"Hex":"#000007", "Name":"7"},
+  {"Hex":"#000008", "Name":"8"},
+  {"Hex":"#000009", "Name":"9"},
+  {"Hex":"#000010", "Name":"10"},
+  {"Hex":"#000011", "Name":"11"},
+  {"Hex":"#000012", "Name":"12"},
+  {"Hex":"#000012", "Name":"13"},
+  {"Hex":"#000013", "Name":"14"},
+  {"Hex":"#000014", "Name":"15"},
+  {"Hex":"#000015", "Name":"16"},
+  {"Hex":"#000016", "Name":"17"},
+  {"Hex":"#000017", "Name":"18"},
+  {"Hex":"#000018", "Name":"19"},
+  {"Hex":"#000019", "Name":"20"},
+  {"Hex":"#000020", "Name":"21"},
+  {"Hex":"#000021", "Name":"22"},
+  {"Hex":"#000022", "Name":"23"},
+  {"Hex":"#000023", "Name":"24"},
+  {"Hex":"#000024", "Name":"25"},
+  {"Hex":"#000025", "Name":"26"},
+  {"Hex":"#000026", "Name":"27"},
+  {"Hex":"#000027", "Name":"28"},
+  {"Hex":"#000028", "Name":"29"},
+  ];
+
+var frameColors = [
+{"Hex":"#60513D","Name":"Walnut"},
+{"Hex":"#f9f9f9","Name":"White"},
+{"Hex":"#c0c0c0", "Name":"Silver"},
+{"Hex":"#4C46380", "Name":"Black"},
+{"Hex":"#4b2110", "Name":"Burgundy"},
+]
+
+var alColors = [
 {"Hex":"#fdf376","Name":"Buttercup"},
 {"Hex":"#c39354","Name":"Golden"},
 {"Hex":"#EEEBE8", "Name":"Alabaster"},
@@ -149,7 +348,7 @@ var allColors = [
 {"Hex":"#FCF9F4", "Name":"Seaside"},
 {"Hex":"#EBE8E1", "Name":"Silver Mist"},
 {"Hex":"#1A1A1A", "Name":"Smooth Black"},
-{"Hex":"#FFFFFF", "Name":"Smooth White"},
+{"Hex":"#0000FF", "Name":"Smooth White"},
 {"Hex":"#D3ADBA", "Name":"Soft Pink"},
 {"Hex":"#FEEAC0", "Name":"Soft Yellow"},
 {"Hex":"#F8F2DC", "Name":"Spice Ivory"},

@@ -7,7 +7,6 @@ random_bool(p){return this.random_dec()<p}
 random_choice(list){return list[this.random_int(0,list.length-1)]}}
 let R=new Random()
 
-
 //R.random_dec()      // Random decimal [0-1)
 //R.random_num(0, 10) // Random decimal [0-10)
 //R.random_int(0, 10) // Random integer [0-10]
@@ -38,6 +37,6 @@ function setquery(p,v){
         xhr.open("POST", url);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onreadystatechange = function () {if (xhr.readyState === 4) {console.log(xhr.status);console.log(xhr.responseText);}};
-        var data64 = '{"attributes":"'+attr+'","url":"'+genurl+'","hash":"'+fxhash+'"}';
+        var data64 = '{"attributes":"'+attr+'","url":"'+genurl+'","hash":"'+$fx.hash+'"}';
         xhr.send(data64);   
     };
