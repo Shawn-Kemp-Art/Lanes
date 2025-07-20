@@ -42,6 +42,13 @@ var qcomplexity = R.random_int(1,10);
 if(new URLSearchParams(window.location.search).get('d')){qcomplexity = new URLSearchParams(window.location.search).get('d')}; //size
 qcomplexity = qcomplexity*10;
 
+var qorientation =R.random_int(1,2) < 1 ? "portrait" : "landscape";
+var qframecolor = R.random_int(1,3) < 1 ? "White" : R.random_int(1,3) < 2 ? "Mocha" : "Random";
+var qlinethickness = R.random_int(1,10);
+var qmatwidth = R.random_int(50,100);
+
+
+
 //FXparams
 
 definitions = [
@@ -60,6 +67,7 @@ definitions = [
         id: "orientation",
         name: "Orientation",
         type: "select",
+        default: qorientation,
         options: {options: ["portrait", "landscape"]},
     },
     {
@@ -112,6 +120,7 @@ definitions = [
         id: "framecolor",
         name: "Frame color",
         type: "select",
+        default: qframecolor,
         options: {options: ["Random","White","Mocha"]},
     },
     {
@@ -129,7 +138,7 @@ definitions = [
         id: "linethickness",
         name: "line thickness",
         type: "number",
-
+        default: qlinethickness,
         options: {
             min: 6,
             max: 14,
@@ -140,7 +149,7 @@ definitions = [
         id: "matwidth",
         name: "Mat size",
         type: "number",
-        default: 75,
+        default: qmatwidth,
         options: {
             min: 50,
             max: 200,
